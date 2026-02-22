@@ -1,0 +1,32 @@
+{
+  "name": "first-pom-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "login": "npx playwright test tests/login.spec.ts",
+    "inventory": "npx playwright test tests/inventory.spec.ts",
+    "cart": "npx playwright test tests/cart.spec.ts",
+    "checkout": "npx playwright test tests/checkout.spec.ts",
+    "test:allure": "playwright test --reporter=line,allure-playwright",
+    "allure:serve": "allure serve allure-results"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JBoss88/first-pom-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/JBoss88/first-pom-ts/issues"
+  },
+  "homepage": "https://github.com/JBoss88/first-pom-ts#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.3.0",
+    "allure-commandline": "^2.36.0",
+    "allure-playwright": "^3.4.5"
+  }
+}
